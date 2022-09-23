@@ -1,11 +1,10 @@
 #include<stdio.h>
 #include "main.h"
 
-/* 
- * main - prints _putchar to the stdout
- * 
- * Return: Always 0 (success)
- */
+/**
+* main - prints _putchar to the stdout
+* Return: Always 0 (success)
+*/
 int main(void)
 {
 	int str[] = {95,112,117,116,99,104,97,114};
