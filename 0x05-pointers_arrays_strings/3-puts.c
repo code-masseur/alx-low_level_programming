@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<stdlib>
 /**
  * _puts - prints a string, followed by a new line.
  * @str: input string.
@@ -8,6 +8,6 @@
 void _puts(char *str)
 {
 	while (*str)
-		_putchar(*str++);
-	_putchar('\n');
+		putchar(*str++);
+	putchar('\n');
 }
