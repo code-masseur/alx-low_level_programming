@@ -3,9 +3,8 @@
 
 /**
 * print_to_98 - prints from any integer to 98
-
 * @n: integer input
-
+*
 * Return: void
 */
 
