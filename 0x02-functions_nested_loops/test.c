@@ -9,22 +9,9 @@
 
 int main(void)
 {
-	char printmadu[] = "_putchar\n";
-	int i;
-	char j;
+	int r;
 
-	for (i = 0; i <= 8; i++)
-	{
-		j = printmadu[i];
-		putchar(j);	
-	}
-	
-	/**
-	 * while (i <= 10)
-	{
-		j = printmadu[i];
-		putchar(j);
-		j++;
-	}*/
+	r = add(87, 45);
+	printf("%d\n", r);
 	return (0);
 }
