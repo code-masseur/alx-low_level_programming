@@ -6,7 +6,7 @@
  * @x: first received integer
  * @y: second received integer
  *
- * Return - the result of the addition
+ * Return: the result of the addition
  */
 
 int add(int x, int y)
