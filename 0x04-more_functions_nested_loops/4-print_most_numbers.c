@@ -2,7 +2,6 @@
 
 /**
  * print_most_numbers - prints numbers 0-9 excluding 2 and 4
- * @x: auto variable to be used by the function
  *
  * Return: void
  */
