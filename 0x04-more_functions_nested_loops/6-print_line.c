@@ -2,7 +2,7 @@
 
 /**
  * print_line - prints a straight line on the screen
- *
+ * @n: integer value for number of times to run the loop
  * Return: Void
  */
 
