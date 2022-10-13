@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** print_square - prints square to the screen
+/**
+ * print_square - prints square to the screen
  * @size: variable to determine the size of the square in the loop
  *
  * Return: return void
@@ -19,7 +20,7 @@ void print_square(int size)
 	{
 		for (y = 0; y < size; y++)
 		{
-			for (z = 0; z < y; z++)
+			for (z = 0; z < size; z++)
 			{
 				putchar(35);
 			}
