@@ -1,10 +1,10 @@
-#ifndef MAIN_H_
-#define MAIN_H_
+#ifndef main_h_
+#define main_h_
 
 #include <stdio.h>
 
 
-int _putchar(int p);
+int _putchar(char);
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
