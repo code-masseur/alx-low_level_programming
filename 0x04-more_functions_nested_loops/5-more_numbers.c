@@ -2,8 +2,6 @@
 
 /**
  * more_numbers - prints numbers 0-14 10 times, each on a new line
- * @e: first auto integer to be used by the function
- * @f: second auto variable to be used by the function
  *
  * Return: void
  */
