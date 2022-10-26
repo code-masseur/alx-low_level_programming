@@ -1,51 +1,13 @@
 #include "lists.h"
 
-/**
- * free_listint_safe - frees linked list safe version
- * @h: input head of linked list
- * Return: size of list that was freed
- *
-
-size_t free_listint_safe(listint_t **h)
-{
-	size_t i = 0, j;
-
-	listint_t *temp, *check, *copy = *h;
-
-	while (*h)
-	{
-		i++;
-		temp = *h;
-		*h = (*h)->next;
-		free(temp);
-		check = copy;
-		j = 0;
-
-		while (j < i)
-		{
-			if (*h == check)
-			{
-				*h = NULL;
-				return (i);
-			}
-			check = check->next;
-			j++;
-		}
-	}
-	return (i);
-}*/
-
-
 size_t looped_listint_count(listint_t *head);
 size_t free_listint_safe(listint_t **h);
 
 /**
- * looped_listint_count - Counts the number of unique nodes
- *                      in a looped listint_t linked list.
+ * looped_listint_count - Counts the number of unique nodes in a looped listint_t linked list.
  * @head: A pointer to the head of the listint_t to check.
  *
- * Return: If the list is not looped - 0.
- *         Otherwise - the number of unique nodes in the list.
+ * Return: If the list is not looped - 0, Otherwise - the number of unique nodes in the list.
  */
 
 size_t looped_listint_count(listint_t *head)
@@ -92,10 +54,8 @@ size_t looped_listint_count(listint_t *head)
 }
 
 /**
- * free_listint_safe - Frees a listint_t list safely (ie.
- *                     can free lists containing loops)
- * @h: A pointer to the address of
- *     the head of the listint_t list.
+ * free_listint_safe - Frees a listint_t list safely
+ * @h: A pointer to the address of the head of the listint_t list.
  * Return: The size of the list that was freed.
  * Description: The function sets the head to NULL.
  */
@@ -125,8 +85,10 @@ size_t free_listint_safe(listint_t **h)
 			free(*h);
 			*h = tmp;
 		}
+
 		*h = NULL;
 	}
+
 	h = NULL;
 	return (nodes);
 }
