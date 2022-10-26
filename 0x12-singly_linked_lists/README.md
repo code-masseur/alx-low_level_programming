@@ -1,0 +1,1 @@
+This folder contains solutions to low level programming projects in C language during my software engineering training at ALX Africa. I solved problems on Linked Lists concept throughout this project.
