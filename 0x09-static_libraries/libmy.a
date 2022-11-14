@@ -1,5 +1,12 @@
 !<arch>
-_abs.c/         0           0     0     644     0         `
+_abs.c/         0           0     0     644     41        `
+#include "main.h"
+
+int _abs(int n)
+{
+	
+}
+
 _atoi.c/        0           0     0     644     0         `
 _isalpha.c/     0           0     0     644     0         `
 _isdigit.c/     0           0     0     644     0         `
