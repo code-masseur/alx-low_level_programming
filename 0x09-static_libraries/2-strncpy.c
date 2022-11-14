@@ -1,6 +1,6 @@
 #include "main.h"
 
-char *_strcpy(__attribute__((unused))char *dest, __attribute__((unused))char *src)
+char *_strncpy(__attribute__((unused))char *dest, __attribute__((unused))char *src, __attribute__((unused))int n)
 {
 	return(0);
 }
