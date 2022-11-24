@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - main prints the names of all arguments passed to it, 
+ * main - main prints the names of all arguments passed to it,
  * each on a new line
  * @argc: parameter to hold the argument count to main
  * @argv: parameter to hold the name of the argument to main
