@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "main.h"
 
 /**
  * main - main adds positive numbers, prints 0 if no number is passed
@@ -35,4 +34,4 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", add);
 	return (0);
-}	
+}
