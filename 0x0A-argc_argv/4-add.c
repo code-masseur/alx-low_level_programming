@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include "main.h"
 
 /**
  * main - main adds positive numbers, prints 0 if no number is passed
@@ -10,33 +12,27 @@
  *
  */
 
-int main(__attribute__((unused))int argc, __attribute__((unused))char *argv[])
+int main(int argc, char *argv[])
 {
 	int x;
+	int y;
 	int add;
 
 	add = 0;
 
-	if (argc > 1)
+	for (x = 1; x < argc; x++)
 	{
-		if (!(argc >= 48 && argc <= 57))
+		for (y = 0; argv[x][y] != '\0'; y++)
 		{
-			printf("%s\n", "Error");
-			return (1);
-		}
-		else
-		{
-			for (x = 1; x < argc; x++)
+			if (argv[x][y] < '0' || argv[x][y] > '9')
 			{
-				add += atoi(argv[x]);
+				printf("Error\n");
+				return (1);
 			}
-			printf("%d\n", add);
 		}
-	}
-	else if (argc == 1)
-	{
-		printf("%d\n", argc - 1);
-	}
+		add += atoi(argv[x]);
 
+	}
+	printf("%d\n", add);
 	return (0);
-}
+}	
